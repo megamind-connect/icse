@@ -23,7 +23,7 @@ const MAP_DATA = [
     icon: "/icons/cityIcon.svg",
     points: [100],
     viewport: {
-     center: { lat: 12.8655, lng: 74.85 }, // Decreased lng to push map to the right
+      center: { lat: 12.8655, lng: 74.85 }, // Decreased lng to push map to the right
       zoom: 12, // slightly zoomed in
     },
   },

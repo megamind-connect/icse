@@ -48,7 +48,7 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         alt: "Cambridge School Mangalore — Neermarga Road, Kudupu, Mangalore",
-        type: "image/jpeg",
+        type: "/images/ogImage/ogImage.png",
       },
     ],
     locale: "en_IN",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     title: "Cambridge School Mangalore",
     description:
       "Top-ranked CBSE school in Mangalore with outstanding board results, sports, ICT & co-curricular activities. Admissions open 2025–26.",
-    images: ["/images/og-banner.jpg"], // ⚠️ Use a real JPG/PNG, not SVG
+    images: ["/images/ogImage/ogImage.png"], // ⚠️ Use a real JPG/PNG, not SVG
   },
 
   // ── Robots ──────────────────────────────────────────────────────────────────

@@ -119,7 +119,7 @@ export default function Footer() {
 
             <div className="flex items-center gap-3">
               {/* LinkedIn */}
-              <Link href="#" className="">
+              {/* <Link href="#" target="_blank" className="">
                 <svg width="38" height="38" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g opacity="0.88">
                     <path
@@ -142,10 +142,10 @@ export default function Footer() {
                     />
                   </g>
                 </svg>
-              </Link>
+              </Link> */}
 
               {/* Instagram */}
-              <Link href="#" className="">
+              <Link href="https://www.instagram.com/tcismangalore" target="_blank" className="">
                 <svg width="38" height="38" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g opacity="0.88">
                     <path
@@ -193,7 +193,7 @@ export default function Footer() {
               </Link>
 
               {/* Meta / Infinity */}
-              <Link href="#" className="">
+              <Link href="https://www.facebook.com/tcisgroupofschools" target="_blank" className="">
                 <svg width="38" height="38" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g opacity="0.88">
                     <path
@@ -213,7 +213,7 @@ export default function Footer() {
               </Link>
 
               {/* YouTube */}
-              <Link href="#" className="">
+              <Link href="https://www.youtube.com/@tcisadyar6845" target="_blank" className="">
                 <svg width="38" height="38" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g opacity="0.88">
                     <path

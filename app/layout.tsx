@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     siteName: "Cambridge School Mangalore",
     images: [
       {
-        url: "/images/ogImage/ogImage.png",
+        url: "https://cambridge-ruddy.vercel.app/images/ogImage/ogImage.png",
         width: 1200,
         height: 630,
         alt: "Cambridge School Mangalore — Adyar, Mangaluru",
@@ -80,7 +80,7 @@ export const metadata: Metadata = {
     title: "Cambridge School Mangalore | Top CBSE School",
     description:
       "Top-ranked CBSE school in Mangalore with outstanding board results, sports, ICT & co-curricular activities. Admissions open 2025–26.",
-    images: ["/images/ogImage/ogImage.png"],
+    images: ["https://cambridge-ruddy.vercel.app/images/ogImage/ogImage.png"],
   },
 
   // ── Robots ────────────────────────────────────────────────────────────────

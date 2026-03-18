@@ -152,6 +152,7 @@ export default function Hero() {
                         <Image
                           width={1000}
                           height={1000}
+                          priority
                           src={campus.image}
                           alt={`Campus View ${index + 1}`}
                           className="w-full h-full object-cover"

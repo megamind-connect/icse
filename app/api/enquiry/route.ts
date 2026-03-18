@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const WEBHOOK_URL =
-  "https://www.accelr.app/api/webhook/unified?accountId=jpfwJbcI1HPy9PEuROdI&source=website";
+const WEBHOOK_URL =process.env.NEXT_PUBLIC_ACCELR!;
 
 export async function POST(req: NextRequest) {
   try {

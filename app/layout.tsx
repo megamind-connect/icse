@@ -87,6 +87,7 @@ export const metadata: Metadata = {
 };
 import { ModalProvider } from "@/context/ModalContext";
 import GlobalModal from "@/components/sections/GlobalModal";
+import { Toaster } from "react-hot-toast";
 
 export default function RootLayout({
   children,
@@ -100,6 +101,7 @@ export default function RootLayout({
           <GlobalModal />
           {children}
         </ModalProvider>
+        <Toaster position="top-center" />
         <Script src="/smoothScroll/smoothScroll.js" strategy="afterInteractive" />
       </body>
     </html>

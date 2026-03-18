@@ -50,24 +50,22 @@ export default function Hero() {
         </svg>
       </div>
 
-      {/* Background Red Curve SVG - Mobile */}
-{/* Background Red Curve SVG - Mobile (Centered) */}
-{/* Background Red Curve SVG - Mobile (Fully Centered) */}
-<div className="absolute block md:hidden top-1/2 left-1/2 z-0 pointer-events-none w-[110vw] -translate-x-1/2  -bottom-10 ">
-  <svg viewBox="0 0 435 359" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-auto">
-    <path 
-      d="M1.66406 1.11049C104.244 154.762 355.365 204.571 432.382 357.73" 
-      stroke="url(#paint0_linear_128_31)" 
-      strokeWidth="4"
-    />
-    <defs>
-      <linearGradient id="paint0_linear_128_31" x1="-93.6111" y1="-348.276" x2="-350.661" y2="2108.34" gradientUnits="userSpaceOnUse">
-        <stop stopColor="#E31C22"/>
-        <stop offset="1" stopColor="#FB7824"/>
-      </linearGradient>
-    </defs>
-  </svg>
-</div>
+      {/* Background Red Curve SVG - Mobile (Fully Centered) */}
+      <div className="absolute block md:hidden top-1/2 left-1/2 z-0 pointer-events-none w-[110vw] -translate-x-1/2  -bottom-10 ">
+        <svg viewBox="0 0 435 359" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-auto">
+          <path 
+            d="M1.66406 1.11049C104.244 154.762 355.365 204.571 432.382 357.73" 
+            stroke="url(#paint0_linear_128_31)" 
+            strokeWidth="4"
+          />
+          <defs>
+            <linearGradient id="paint0_linear_128_31" x1="-93.6111" y1="-348.276" x2="-350.661" y2="2108.34" gradientUnits="userSpaceOnUse">
+              <stop stopColor="#E31C22"/>
+              <stop offset="1" stopColor="#FB7824"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
 
       {/* --- NAVBAR SECTION --- */}
       <nav className="w-full relative z-50">
@@ -161,10 +159,13 @@ export default function Hero() {
                     ))}
                   </Swiper>
                 </div>
- <div className="md:mt-auto mt-6 md:space-y-1 md:hidden  max-w-[80%]">
+
+                {/* --- ADDED min-h-[90px] TO PREVENT JUMPING --- */}
+                <div className="md:mt-auto mt-6 md:space-y-1 md:hidden max-w-[80%] min-h-[90px]">
                   <p className="text-primary font-bold text-lg md:text-xl  transition-all duration-300">{campusData[activeIndex].name}</p>
                   <p className="text-[#191919] text-lg md:text-xl transition-all duration-300">{campusData[activeIndex].location}</p>
                 </div>
+
                 {/* Playful Green Face Graphic - Adjusted positioning so it doesn't vanish on mobile */}
                <div className="absolute -top-6 -right-6 md:top-auto md:right-auto md:-bottom-10 md:-left-20 z-20 w-24 h-24 md:w-36 md:h-36 drop-shadow-md">
                   <svg width="100%" height="100%" viewBox="0 0 219 218" fill="none" xmlns="http://www.w3.org/2000/svg">

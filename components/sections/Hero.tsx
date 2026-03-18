@@ -166,7 +166,7 @@ export default function Hero() {
                   <p className="text-[#191919] text-lg md:text-xl transition-all duration-300">{campusData[activeIndex].location}</p>
                 </div>
                 {/* Playful Green Face Graphic - Adjusted positioning so it doesn't vanish on mobile */}
-                <div className="absolute -top-6 -right-6 md:-bottom-10 md:-left-20 z-20 w-24 h-24 md:w-36 md:h-36 drop-shadow-md">
+               <div className="absolute -top-6 -right-6 md:top-auto md:right-auto md:-bottom-10 md:-left-20 z-20 w-24 h-24 md:w-36 md:h-36 drop-shadow-md">
                   <svg width="100%" height="100%" viewBox="0 0 219 218" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M88.7765 196.314C137.114 207.894 185.687 178.096 197.267 129.758C208.847 81.4199 179.049 32.8469 130.711 21.2672C82.3727 9.68738 33.7998 39.4858 22.22 87.8237C10.6402 136.162 40.4386 184.735 88.7765 196.314Z"

@@ -98,7 +98,7 @@ export default function LandingPage() {
       {/* Combined Wrapper for Differentiation & Campus Sections to share the background SVG line */}
       <div className="relative w-full overflow-hidden bg-white">
         {/* Background Diagonal Red SVG Line */}
-        <div className="absolute hidden md:block top-54 left-0 w-full lg:w-[100vw] xl:w-[100vw] z-0 pointer-events-none ">
+        <div className="absolute hidden md:block top-54 -left-2 w-full lg:w-[100vw]  z-0 pointer-events-none ">
           <svg viewBox="0 0 1712 1130" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-auto">
             <path d="M3.12012 2.50293C487.259 606.036 1511.35 1101.83 1710.68 1125.89" stroke="url(#paint0_linear_86_6)" strokeWidth="8" />
             <defs>

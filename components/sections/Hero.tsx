@@ -69,7 +69,7 @@ export default function Hero() {
 
       {/* --- NAVBAR SECTION --- */}
       <nav className="w-full relative z-50">
-        <div className="container mx-auto px-4 pt-6 pb-3 md:py-10 flex flex-col md:flex-row md:gap-0 gap-7 justify-between items-start md:items-center">
+        <div className="container mx-auto px-4 pt-6 pb-3 md:py-10 flex flex-row md:flex-row md:gap-0 gap-7 justify-between items-start md:items-center">
           
           {/* FIX: Single Image component. 
             We set the max width/height for Next.js intrinsic sizing, 
@@ -81,7 +81,7 @@ export default function Hero() {
             width={220} 
             height={220} 
             alt="Logo" 
-            className="w-[180px] md:w-[220px] cursor-pointer h-auto"
+            className="w-[170px] md:w-[220px] cursor-pointer h-auto"
             priority 
           />
         
@@ -90,7 +90,7 @@ export default function Hero() {
             <Button onClick={openEnquiryModal}>
               Apply Now
             </Button>
-              <h2 className="text-[10px] md:text-xs font-bold text-primary md:mb-6 leading-tight">CBSE Affiliated · Code: 830736</h2></div>
+              <h2 className="text-[8px] text-center md:text-xs font-bold text-primary md:mb-6 leading-tight">CBSE Affiliated · Code: 830736</h2></div>
           </div>
 
         </div>

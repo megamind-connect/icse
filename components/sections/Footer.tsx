@@ -7,10 +7,9 @@ export default function Footer() {
     <footer className="w-full bg-[#161616] pt-16 pb-8 px-4 font-sans">
       <div className="container mx-auto px-4">
         {/* Top Section: Logo & Contact Info */}
-        {/* Added items-center for mobile, lg:items-start for desktop */}
-        <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start gap-12 lg:gap-8 text-center lg:text-left">
+        <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start gap-8 lg:gap-8 text-center lg:text-left">
           {/* Left: Logo & Location */}
-          <div className="flex flex-col items-center lg:items-start">
+          <div className="flex flex-col items-center lg:items-start w-full lg:w-auto">
             <div className="relative h-[80px] w-[300px] sm:w-[350px]">
               <Image
                 src="/svgs/footer.svg"
@@ -22,18 +21,22 @@ export default function Footer() {
             <p className="text-[#D1D1D1] text-lg mt-4">Adyar, Mangalore</p>
           </div>
 
+          {/* Mobile Only Divider between Logo and Contacts */}
+          <div className="w-full border-t border-[#333333] block lg:hidden my-2"></div>
+
           {/* Right: Contact Information */}
-          <div className="flex flex-col gap-5 lg:mr-12 items-center lg:items-start">
+          {/* Adjusted to be a left-aligned block but centered within the column for mobile */}
+          <div className="flex flex-col gap-6 lg:mr-12 items-start mx-auto lg:mx-0 w-fit lg:w-auto">
             {/* Phone */}
-            <div className="flex flex-col sm:flex-row items-center gap-4 text-[#D1D1D1] hover:text-white transition-colors cursor-pointer">
+            <div className="flex flex-row items-center gap-4 text-[#D1D1D1] hover:text-white transition-colors cursor-pointer w-full">
               <a
                 aria-label="phone number"
                 href="tel:+919686357711"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-col sm:flex-row items-center gap-4"
+                className="flex flex-row items-center gap-4 text-left"
               >
-                <svg width="24" height="24" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="24" height="24" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg" className="shrink-0">
                   <path
                     d="M13.844 14.0744C15.098 12.8204 15.098 10.7873 13.844 9.53342L9.303 4.99235C8.04903 3.73837 6.0159 3.73837 4.76193 4.99235C-0.253976 10.0082 -0.253976 18.1406 4.76193 23.1565L13.844 32.2386C18.8599 37.2545 26.9922 37.2545 32.0081 32.2386C33.2622 30.9846 33.2622 28.9515 32.0081 27.6976L27.4671 23.1565C26.2132 21.9025 24.18 21.9025 22.9261 23.1565L20.6556 25.427C19.4016 26.681 17.3685 26.681 16.1145 25.427L11.5735 20.886C10.3195 19.632 10.3195 17.5989 11.5735 16.3449L13.844 14.0744Z"
                     stroke="white"
@@ -59,20 +62,20 @@ export default function Footer() {
                     strokeLinejoin="round"
                   />
                 </svg>
-                <span className="text-[17px] tracking-wide">+91 9686357711</span>
+                <span className="text-[16px] sm:text-[17px] tracking-wide">+91 9686357711</span>
               </a>
             </div>
 
             {/* Email */}
-            <div className="flex flex-col sm:flex-row items-center gap-4 text-[#D1D1D1] hover:text-white transition-colors cursor-pointer">
+            <div className="flex flex-row items-center gap-4 text-[#D1D1D1] hover:text-white transition-colors cursor-pointer w-full">
               <a
                 aria-label="email"
                 href="mailto:tcisadyarmangalore@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-col sm:flex-row items-center gap-4"
+                className="flex flex-row items-center gap-4 text-left"
               >
-                <svg width="24" height="24" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="24" height="24" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg" className="shrink-0">
                   <path
                     d="M3.80758 3.91157L14.9084 11.8814C15.5493 12.3415 16.3982 12.3415 17.0392 11.8814L28.14 3.91157M4.74344 24.2925H27.2041C29.2715 24.2925 30.9475 22.5545 30.9475 20.4104V4.88209C30.9475 2.73807 29.2715 1 27.2041 1H4.74344C2.676 1 1 2.73807 1 4.88209V20.4104C1 22.5545 2.676 24.2925 4.74344 24.2925Z"
                     stroke="white"
@@ -81,20 +84,20 @@ export default function Footer() {
                     strokeLinejoin="round"
                   />
                 </svg>
-                <span className="text-[17px] tracking-wide">tcisadyarmangalore@gmail.com</span>
+                <span className="text-[16px] sm:text-[17px] tracking-wide break-all sm:break-normal">tcisadyarmangalore@gmail.com</span>
               </a>
             </div>
 
             {/* Location */}
-            <div className="flex flex-col sm:flex-row items-center lg:items-start gap-4 text-[#D1D1D1] hover:text-white transition-colors cursor-pointer">
+            <div className="flex flex-row items-start lg:items-start gap-4 text-[#D1D1D1] hover:text-white transition-colors cursor-pointer w-full">
               <a
                 aria-label="location"
                 href="https://maps.app.goo.gl/f5XLEMkFz59bGvBf7"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-col sm:flex-row items-center lg:items-start gap-4"
+                className="flex flex-row items-start lg:items-start gap-4 text-left"
               >
-                <svg width="28" height="28" viewBox="0 0 28 36" fill="none" xmlns="http://www.w3.org/2000/svg" className="shrink-0">
+                <svg width="28" height="28" viewBox="0 0 28 36" fill="none" xmlns="http://www.w3.org/2000/svg" className="shrink-0 mt-1 lg:mt-0">
                   <path
                     d="M14.0026 34.2288C14.0026 34.2288 27.0052 22.671 27.0052 14.0026C27.0052 6.82145 21.1837 1 14.0026 1C6.82145 1 1 6.82145 1 14.0026C1 22.671 14.0026 34.2288 14.0026 34.2288Z"
                     stroke="white"
@@ -106,10 +109,10 @@ export default function Footer() {
                     strokeWidth="2"
                   />
                 </svg>
-                <span className="text-[17px] leading-relaxed tracking-wide">
+                <span className="text-[16px] sm:text-[17px] leading-relaxed tracking-wide">
                   Near Sahyadri College Of Engineering,
-                  <br />
-                  Adyar, Mangaluru, Karnataka 575007
+                  <br className="hidden sm:block" />
+                  <span className="block sm:inline"> Adyar, Mangaluru, Karnataka 575007</span>
                 </span>
               </a>
             </div>
@@ -117,41 +120,15 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="w-full border-t border-[#333333]  my-7 md:my-10"></div>
+        <div className="w-full border-t border-[#333333] my-7 md:my-10"></div>
 
         {/* Bottom Section: Socials & Copyright */}
-        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-5 md:gap-6">
           {/* Follow Us */}
-          <div className="flex items-center gap-4">
-            <span className="text-[#D1D1D1] text-[15px] font-medium mr-2">Follow Us</span>
+          <div className="flex flex-col md:flex-row items-center gap-4">
+            <span className="text-[#D1D1D1] text-[18px] md:text-[15px] font-medium md:mr-2">Follow Us</span>
 
             <div className="flex items-center gap-3">
-              {/* LinkedIn */}
-              {/* <Link href="#" target="_blank" className="">
-                <svg width="38" height="38" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g opacity="0.88">
-                    <path
-                      opacity="0.4"
-                      d="M20.5049 0.375C31.6324 0.375205 40.6338 9.13163 40.6338 19.9102C40.6338 30.6887 31.6324 39.4451 20.5049 39.4453C9.3772 39.4453 0.375 30.6888 0.375 19.9102C0.375 9.13151 9.3772 0.375 20.5049 0.375Z"
-                      stroke="white"
-                      strokeOpacity="0.88"
-                      strokeWidth="0.75"
-                    />
-                    <path
-                      d="M30.0254 29.4354V22.4647C30.0254 19.0389 29.2879 16.4219 25.291 16.4219C23.364 16.4219 22.0793 17.4687 21.5559 18.4679H21.5083V16.7312H17.7256V29.4354H21.6748V23.1309C21.6748 21.4655 21.9841 19.8715 24.0301 19.8715C26.0523 19.8715 26.0761 21.751 26.0761 23.226V29.4116H30.0254V29.4354Z"
-                      fill="white"
-                      fillOpacity="0.88"
-                    />
-                    <path d="M11.2979 16.7256H15.2471V29.4298H11.2979V16.7256Z" fill="white" fillOpacity="0.88" />
-                    <path
-                      d="M13.278 10.3994C12.0171 10.3994 10.9941 11.4224 10.9941 12.6833C10.9941 13.9442 12.0171 14.991 13.278 14.991C14.539 14.991 15.562 13.9442 15.562 12.6833C15.562 11.4224 14.539 10.3994 13.278 10.3994Z"
-                      fill="white"
-                      fillOpacity="0.88"
-                    />
-                  </g>
-                </svg>
-              </Link> */}
-
               {/* Instagram */}
               <Link aria-label="instagram" href="https://www.instagram.com/tcismangalore" target="_blank" className="">
                 <svg width="38" height="38" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -258,11 +235,12 @@ export default function Footer() {
               </Link>
             </div>
           </div>
-          <div className="w-full border-t md:hidden border-[#333333]"></div>
           {/* Copyright Text */}
-          <div className="text-center md:text-right">
-            <p className="text-[#999999] text-[13px] tracking-wide">
-              © The Cambridge International School, {new Date().getFullYear()} | All Rights Reserved
+          <div className="text-center md:text-right mt-2 md:mt-0">
+            <p className="text-[#999999] text-[13px] tracking-wide leading-relaxed">
+              <span className="block md:inline">© The Cambridge International School, {new Date().getFullYear()}</span>
+              <span className="hidden md:inline"> | </span>
+              <span className="block md:inline">All Rights Reserved</span>
             </p>
           </div>
         </div>

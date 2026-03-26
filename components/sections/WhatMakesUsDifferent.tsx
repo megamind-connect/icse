@@ -148,7 +148,7 @@ export default function WhatMakesUsDifferent() {
                           className="overflow-hidden"
                         >
                           <div className="ml-11 lg:ml-[60px] pb-2 pt-2">
-                            <p className="text-primary text-sm md:text-base whitespace-pre-line leading-relaxed flex-1 m-0">{feature.description}</p>
+                            <p className="text-primary text-base md:whitespace-pre-line leading-relaxed flex-1 m-0">{feature.description}</p>
                           </div>
                         </motion.div>
                       )}

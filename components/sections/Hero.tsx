@@ -31,7 +31,7 @@ export default function Hero() {
         bullet.classList.add("swiper-bullet-completed");
       } else {
         bullet.classList.remove("swiper-bullet-completed");
-      } 
+      }
     });
   }, []);
 
@@ -53,15 +53,11 @@ export default function Hero() {
       {/* Background Red Curve SVG - Mobile (Fully Centered) */}
       <div className="absolute block md:hidden top-1/2 left-1/2 z-0 pointer-events-none w-[110vw] -translate-x-1/2  -bottom-10 ">
         <svg viewBox="0 0 435 359" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-auto">
-          <path 
-            d="M1.66406 1.11049C104.244 154.762 355.365 204.571 432.382 357.73" 
-            stroke="url(#paint0_linear_128_31)" 
-            strokeWidth="4"
-          />
+          <path d="M1.66406 1.11049C104.244 154.762 355.365 204.571 432.382 357.73" stroke="url(#paint0_linear_128_31)" strokeWidth="4" />
           <defs>
             <linearGradient id="paint0_linear_128_31" x1="-93.6111" y1="-348.276" x2="-350.661" y2="2108.34" gradientUnits="userSpaceOnUse">
-              <stop stopColor="#E31C22"/>
-              <stop offset="1" stopColor="#FB7824"/>
+              <stop stopColor="#E31C22" />
+              <stop offset="1" stopColor="#FB7824" />
             </linearGradient>
           </defs>
         </svg>
@@ -70,29 +66,20 @@ export default function Hero() {
       {/* --- NAVBAR SECTION --- */}
       <nav className="w-full relative z-50">
         <div className="container mx-auto px-4 pt-6 pb-3 md:py-10 flex flex-row md:flex-row md:gap-0 gap-7 justify-between items-start md:items-center">
-          
           {/* FIX: Single Image component. 
             We set the max width/height for Next.js intrinsic sizing, 
             then use Tailwind (w-[180px] md:w-[220px] h-auto) to scale it responsively.
           */}
-         
-          <Image 
-            src="/svgs/navLogo.svg" 
-            width={220} 
-            height={220} 
-            alt="Logo" 
-            className="w-[170px] md:w-[220px] cursor-pointer h-auto"
-            priority 
-          />
-        
-          <div>
-            <div className="flex flex-col  md:gap-4 gap-2"> 
-            <Button aria-label="apply-now" onClick={openEnquiryModal}>
-              Apply Now
-            </Button>
-              <h2 className="text-[8px] text-center md:text-xs font-bold text-primary  leading-tight">CBSE Affiliated · Code: 830736</h2></div>
-          </div>
 
+          <Image src="/svgs/navLogo.svg" width={220} height={220} alt="Logo" className="w-[170px] md:w-[220px] cursor-pointer h-auto" priority />
+
+          <div>
+            <div className="flex flex-col  md:gap-4 gap-2">
+            
+              <h2 className="text-xl md:text-xl font-bold text-primary leading-tigh"> CBSE Affiliated <br />
+  Code: 830736</h2>
+            </div>
+          </div>
         </div>
       </nav>
 
@@ -101,7 +88,10 @@ export default function Hero() {
         <div className="container mx-auto pt-4 md:pt-5 px-4 relative z-10 ">
           {/* Adjusted padding-bottom: pb-12 for mobile, pb-32 for desktop */}
           <div className="border-b-[3px] pb-7 md:pb-32 border-[#DBDBDB]">
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-primary md:mb-6 leading-tight">
+            <h1 className="text-3xl md:hidden md:text-5xl lg:text-6xl font-bold text-primary md:mb-6 leading-tight">
+              A School Where Children Learn, Explore and Grow with Confidence
+            </h1>
+            <h1 className="text-3xl hidden md:block md:text-5xl lg:text-6xl font-bold text-primary md:mb-6 leading-tight">
               A School Where Children
               <br className="hidden md:block" />
               Learn, Explore and Grow
@@ -119,7 +109,7 @@ export default function Hero() {
                 </h2>
 
                 <div>
-                  <Button aria-label="book-a-campus-visit" variant="secondary" className="w-full md:w-auto" onClick={openEnquiryModal}>
+                  <Button aria-label="book-a-campus-visit"  className="w-full md:w-auto" onClick={openEnquiryModal}>
                     Book a Campus Visit
                   </Button>
                 </div>
@@ -171,7 +161,7 @@ export default function Hero() {
                 </div>
 
                 {/* Playful Green Face Graphic - Adjusted positioning so it doesn't vanish on mobile */}
-               <div className="absolute -top-6 -right-6 md:top-auto md:right-auto md:-bottom-10 md:-left-20 z-20 w-24 h-24 md:w-36 md:h-36 drop-shadow-md">
+                <div className="absolute -top-6 -right-6 md:top-auto md:right-auto md:-bottom-10 md:-left-20 z-20 w-24 h-24 md:w-36 md:h-36 drop-shadow-md">
                   <svg width="100%" height="100%" viewBox="0 0 219 218" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M88.7765 196.314C137.114 207.894 185.687 178.096 197.267 129.758C208.847 81.4199 179.049 32.8469 130.711 21.2672C82.3727 9.68738 33.7998 39.4858 22.22 87.8237C10.6402 136.162 40.4386 184.735 88.7765 196.314Z"
@@ -295,7 +285,6 @@ export default function Hero() {
         `,
         }}
       />
-
     </div>
   );
 }

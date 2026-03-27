@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   publisher: "St. Lawrence Education Trust",
   metadataBase: new URL("https://apply.tcismangalore.org"),
   alternates: {
-    canonical: "https://apply.tcismangalore.org",
+    canonical: "/",
   },
 
   // ── Open Graph ────────────────────────────────────────────────────────────

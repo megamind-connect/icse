@@ -114,11 +114,13 @@ export default function AdmissionsForm() {
             </h2>
             <p className="text-lg text-center mt-5">Nursery to Grade 10</p>
             </div>
-            <h2 className="text-3xl hidden md:block md:text-[34px] font-bold text-[#1A1A1A] mb-6 leading-snug">
+            <div className="hidden md:block mb-6 ">
+            <h2 className="text-3xl hidden md:block md:text-[34px] font-bold text-[#1A1A1A] leading-snug">
               Admissions Open {new Date().getFullYear()}-{(new Date().getFullYear() + 1).toString().slice(-2)}
-              <br />
-              for Nursery to Grade 10
-            </h2>
+              </h2>
+             <p className="text-[#1A1A1A] font-semibold text-2xl">Nursery to Grade 10</p>
+           
+            </div>
 
             <form className="flex flex-col gap-5" onSubmit={handleSubmit}>
               <div>

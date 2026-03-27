@@ -84,10 +84,11 @@ export default function AdmissionSteps() {
   }, []);
 
   // Core timings
-  const stepDrawTime = 1.0;
-  const stepFillTime = 0.4;
-  const dashDrawTime = 0.5;
-  const cycleTime = stepDrawTime + stepFillTime + dashDrawTime; // 1.9s per cycle
+// Core timings (Decreased values to increase animation speed)
+  const stepDrawTime = 0.5; // Was 1.0
+  const stepFillTime = 0.2; // Was 0.4
+  const dashDrawTime = 0.25; // Was 0.5
+  const cycleTime = stepDrawTime + stepFillTime + dashDrawTime; // Now 0.95s per cycle
 
   // Pop-in animation for the step container
   const itemVariants: Variants = {

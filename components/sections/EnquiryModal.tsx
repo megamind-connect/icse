@@ -16,6 +16,7 @@ const WEBHOOK_URL = "/api/enquiry";
 export default function EnquiryModal({ isOpen = true, onClose }: EnquiryModalProps) {
   const [countryCode, setCountryCode] = useState("+91");
   const [parentName, setParentName] = useState("");
+  const [studentName, setStudentName] = useState("");
   const [phone, setPhone] = useState("");
   const [childAge, setChildAge] = useState("");
   const [grade, setGrade] = useState("");
@@ -35,6 +36,7 @@ export default function EnquiryModal({ isOpen = true, onClose }: EnquiryModalPro
         body: JSON.stringify({
           formType: "enquiry_modal",
           parentName,
+          name: studentName,
           phone: `${countryCode}${phone}`,
           childAge,
           grade,
@@ -54,6 +56,7 @@ export default function EnquiryModal({ isOpen = true, onClose }: EnquiryModalPro
       toast.success("Enquiry submitted. Thank you!");
       onClose();
       setParentName("");
+      setStudentName("");
       setPhone("");
       setChildAge("");
       setGrade("");
@@ -128,6 +131,17 @@ export default function EnquiryModal({ isOpen = true, onClose }: EnquiryModalPro
               placeholder="Parent Name"
               value={parentName}
               onChange={(e) => setParentName(e.target.value)}
+              className="w-full border-b border-primary/50 py-2 bg-transparent text-primary placeholder-primary/90 text-base md:text-xl focus:outline-none focus:border-gray-800 transition-colors"
+              required
+            />
+          </div>
+
+          <div>
+            <input
+              type="text"
+              placeholder="Student Name"
+              value={studentName}
+              onChange={(e) => setStudentName(e.target.value)}
               className="w-full border-b border-primary/50 py-2 bg-transparent text-primary placeholder-primary/90 text-base md:text-xl focus:outline-none focus:border-gray-800 transition-colors"
               required
             />

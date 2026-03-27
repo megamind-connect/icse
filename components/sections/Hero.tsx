@@ -76,7 +76,7 @@ export default function Hero() {
           <div>
             <div className="flex flex-col  md:gap-4 gap-2">
             
-              <h2 className="text-base md:text-xl font-bold text-primary leading-tigh"> CBSE Affiliated <br />
+              <h2 className="text-base md:text-xl font-bold text-secondary md:text-primary leading-tigh"> CBSE Affiliated <br />
   Code: 830736</h2>
             </div>
           </div>
@@ -88,15 +88,15 @@ export default function Hero() {
         <div className="container mx-auto pt-4 md:pt-5 px-4 relative z-10 ">
           {/* Adjusted padding-bottom: pb-12 for mobile, pb-32 for desktop */}
           <div className="border-b-[3px] pb-7 md:pb-32 border-[#DBDBDB]">
-            <h1 className="text-3xl md:hidden md:text-5xl lg:text-6xl font-bold text-primary md:mb-6 leading-tight">
-              A School Where Children Learn, Explore and Grow with Confidence
+            <h1 className="text-3xl md:hidden md:text-5xl lg:text-6xl font-bold text-primary md:mb-6 leading-[1.4]">
+              A School Where Children  <span className="text-[#0095D6]">Learn</span>, <span className="text-[#FB7824]">Explore</span> and <span className="text-[#3F9C49]">Grow</span>
+              <br className="hidden md:block" /> with <span className="text-[#E31C22]">Confidence</span>
             </h1>
             <h1 className="text-3xl hidden md:block md:text-5xl lg:text-6xl font-bold text-primary md:mb-6 leading-tight">
               A School Where Children
               <br className="hidden md:block" />
-              Learn, Explore and Grow
-              <br className="hidden md:block" />
-              with Confidence
+              <span className="text-[#0095D6]">Learn</span>, <span className="text-[#FB7824]">Explore</span> and <span className="text-[#3F9C49]">Grow</span>
+              <br className="hidden md:block" />with <span className="text-[#E31C22]">Confidence</span>
             </h1>
 
             <div className="grid grid-cols-1 lg:grid-cols-12 md:gap-8 items-stretch">

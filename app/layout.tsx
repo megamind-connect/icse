@@ -12,39 +12,40 @@ const inter = Inter({
 export const metadata: Metadata = {
   // ── Basics ────────────────────────────────────────────────────────────────
   title: {
-    default: "Cambridge School Mangalore | Top CBSE School – Nursery to Grade 10",
+    default: "Cambridge International School Adyar Mangaluru | Top CBSE School – Nursery to Grade 10",
     template: "%s | Cambridge School Mangalore",
   },
   description:
-    "Cambridge School Mangalore is a top-ranked CBSE school in Adyar, Mangaluru, offering academic excellence from Nursery to Grade 10. Founded in 2007 under St. Lawrence Education Trust. Admissions open 2025–26.",
+    "Cambridge International School Adyar Mangaluru is a top-ranked CBSE school offering academic excellence from Nursery to Grade 10. Founded in 2007 under St. Lawrence Education Trust. Admissions open 2025–26.",
+  
+ keywords: [
+  // Brand
+  "Cambridge International School Adyar Mangaluru",
+  "Cambridge International School Mangalore",
+  "TCIS Mangalore",
+  "Cambridge School Mangalore",
 
-  keywords: [
-    // Brand
-    "Cambridge School Mangalore",
-    "The Cambridge International School Mangalore",
-    "TCIS Mangalore",
+  // Location-intent
+  "best CBSE school in Mangalore",
+  "top school in Mangaluru",
+  "CBSE school Adyar Mangalore",
+  "CBSE school Kudupu Mangalore",
+  "CBSE school Neermarga Road",
+  "school near Sahyadri College Mangalore",
 
-    // Location-intent
-    "best CBSE school in Mangalore",
-    "top school in Mangaluru",
-    "CBSE school Adyar Mangalore",
-    "CBSE school Kudupu Mangalore",
-    "CBSE school Neermarga Road",
-    "school near Sahyadri College Mangalore",
+  // Admission-intent
+  "Cambridge School admissions 2025",
+  "CBSE school admissions Mangalore 2025-26",
+  "nursery admission Mangalore",
+  "grade 10 CBSE school Mangalore",
 
-    // Admission-intent
-    "Cambridge School admissions 2025",
-    "CBSE school admissions Mangalore 2025-26",
-    "nursery admission Mangalore",
-    "grade 10 CBSE school Mangalore",
-
-    // Broad
-    "best school in Karnataka",
-    "St Lawrence Education Trust school",
-    "co-curricular activities CBSE school",
-    "ICT school Mangalore",
-    "international school Mangaluru",
-  ],
+  // Broad
+  "best school in Karnataka",
+  "St Lawrence Education Trust school",
+  "co-curricular activities CBSE school",
+  "ICT school Mangalore",
+  "international school Mangaluru",
+],
 
   // ── Authorship & URL ──────────────────────────────────────────────────────
   authors: [{ name: "Cambridge School Mangalore", url: "https://apply.tcismangalore.org" }],
@@ -57,7 +58,7 @@ export const metadata: Metadata = {
 
   // ── Open Graph ────────────────────────────────────────────────────────────
   openGraph: {
-    title: "Cambridge School Mangalore | Top CBSE School – Nursery to Grade 10",
+    title: "Cambridge International School Adyar Mangaluru",
     description:
       "A premier CBSE school in Adyar, Mangaluru, founded in 2007 by Collins & Flavia Albuquerque under St. Lawrence Education Trust. Admissions open 2025–26.",
     url: "https://apply.tcismangalore.org",
@@ -77,7 +78,7 @@ export const metadata: Metadata = {
   // ── Twitter / X ───────────────────────────────────────────────────────────
   twitter: {
     card: "summary_large_image",
-    title: "Cambridge School Mangalore | Top CBSE School",
+    title: "Cambridge International School Adyar Mangaluru",
     description:
       "Top-ranked CBSE school in Mangalore with outstanding board results, sports, ICT & co-curricular activities. Admissions open 2025–26.",
     images: ["/images/ogImage/ogImage.png"],

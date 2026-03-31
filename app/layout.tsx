@@ -12,11 +12,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   // ── Basics ────────────────────────────────────────────────────────────────
   title: {
-    default: "Cambridge International School Adyar Mangaluru | Top CBSE School – Nursery to Grade 10",
+    default: "The Cambridge International School Adyar Mangaluru | Top CBSE School – Nursery to Grade 10",
     template: "%s | Cambridge School Mangalore",
   },
   description:
-    "Cambridge International School Adyar Mangaluru is a top-ranked CBSE school offering academic excellence from Nursery to Grade 10. Founded in 2007 under St. Lawrence Education Trust. Admissions open 2025–26.",
+    "The Cambridge International School Adyar Mangaluru is a top-ranked CBSE school offering academic excellence from Nursery to Grade 10. Founded in 2007 under St. Lawrence Education Trust. Admissions open 2025–26.",
   
  keywords: [
   // Brand
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
 
   // ── Open Graph ────────────────────────────────────────────────────────────
   openGraph: {
-    title: "Cambridge International School Adyar Mangaluru",
+    title: "The Cambridge International School Adyar Mangaluru",
     description:
       "A premier CBSE school in Adyar, Mangaluru, founded in 2007 by Collins & Flavia Albuquerque under St. Lawrence Education Trust. Admissions open 2025–26.",
     url: "https://apply.tcismangalore.org",
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
   // ── Twitter / X ───────────────────────────────────────────────────────────
   twitter: {
     card: "summary_large_image",
-    title: "Cambridge International School Adyar Mangaluru",
+    title: "The Cambridge International School Adyar Mangaluru",
     description:
       "Top-ranked CBSE school in Mangalore with outstanding board results, sports, ICT & co-curricular activities. Admissions open 2025–26.",
     images: ["/images/ogImage/ogImage.png"],
@@ -106,7 +106,7 @@ export const metadata: Metadata = {
 
   // ── Misc ──────────────────────────────────────────────────────────────────
   category: "education",
-  applicationName: "Cambridge School Mangalore",
+  applicationName: "The Cambridge School Mangalore",
   referrer: "origin-when-cross-origin",
   formatDetection: {
     email: false,

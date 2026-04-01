@@ -69,7 +69,7 @@ export default function AdmissionsForm() {
           childAge,
           grade,
           location,
-          premise: "admission",
+          premise: location,
           utm_source,
           utm_medium,
           utm_campaign,

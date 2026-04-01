@@ -76,8 +76,9 @@ export default function Hero() {
           <div>
             <div className="flex flex-col  md:gap-4 gap-2">
             
-              <h2 className="text-base md:text-xl font-bold text-secondary md:text-primary leading-tigh"> CBSE Affiliated <br />
-  Code: 830736</h2>
+              <Button aria-label="apply-now"  className="w-full md:w-auto" onClick={openEnquiryModal}>
+                    Apply Now
+                  </Button>
             </div>
           </div>
         </div>

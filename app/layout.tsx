@@ -3,6 +3,9 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 
+// 1. Import the official GoogleAnalytics component
+import { GoogleAnalytics } from '@next/third-parties/google';
+
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
@@ -101,7 +104,8 @@ export const metadata: Metadata = {
 
   // ── Verification ─────────────────────────────────────────────────────────
   verification: {
-    google: "YOUR_GOOGLE_SEARCH_CONSOLE_TOKEN", // ← Paste token from Search Console
+    // 2. Added your specific Google Site Verification token here
+    google: "OD4AP9ghSime2qaxwnthvya-I3FgSsmXvICK48NEQ_g", 
   },
 
   // ── Misc ──────────────────────────────────────────────────────────────────
@@ -134,6 +138,9 @@ export default function RootLayout({
         <Toaster position="top-center" />
         <Script src="/smoothScroll/smoothScroll.js" />
       </body>
+      
+      {/* 3. Added the Google Analytics component here */}
+      <GoogleAnalytics gaId="G-4DZB65PQ2R" />
     </html>
   );
 }

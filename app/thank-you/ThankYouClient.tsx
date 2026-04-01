@@ -15,14 +15,6 @@ export default function ThankYouClient() {
   const router = useRouter();
   const [countdown, setCountdown] = useState(REDIRECT_SECONDS);
 
-  useEffect(() => {
-    if (countdown <= 0) {
-      router.push("/");
-      return;
-    }
-    const timer = setTimeout(() => setCountdown((c) => c - 1), 1000);
-    return () => clearTimeout(timer);
-  }, [countdown, router]);
 
   // Progress: goes from full (100%) down to 0%
   const progress = (countdown / REDIRECT_SECONDS) * 100;
@@ -33,27 +25,24 @@ export default function ThankYouClient() {
       <div className="min-h-screen flex flex-col">
 
         {/* NAV */}
-        <nav className="w-full relative z-50 shrink-0">
-          <div className="container mx-auto px-4 py-8 border-b-[3px] md:border-b-0 mb-4 md:mb-0 border-[#DBDBDB] md:py-10 flex flex-row md:gap-0 gap-7 justify-between items-start md:items-center">
-            <Link href="/">
-              <Image
-                src="/svgs/navLogo.svg"
-                width={220}
-                height={220}
-                alt="Logo"
-                className="w-[170px] md:w-[220px] cursor-pointer h-auto"
-                priority
-              />
-            </Link>
-            <div className="flex flex-col md:gap-4 gap-2">
-              <h2 className="text-base md:text-xl font-bold text-secondary md:text-primary leading-tight">
-                Affiliated to CBSE
-                <br />
-                Affiliation No: 830736
-              </h2>
-            </div>
-          </div>
-        </nav>
+        <nav className="w-full relative z-50">
+               <div className="container mx-auto px-4 py-8  border-b-[3px] md:border-b-0 mb-4 md:mb-0 border-[#DBDBDB] md:py-10 flex flex-row md:flex-row md:gap-0 gap-7 justify-between items-start md:items-center">
+                 {/* FIX: Single Image component. 
+                   We set the max width/height for Next.js intrinsic sizing, 
+                   then use Tailwind (w-[180px] md:w-[220px] h-auto) to scale it responsively.
+                 */}
+       
+                 <Image src="/svgs/navLogo.svg" width={220} height={220} alt="Logo" className="w-[170px] md:w-[220px] cursor-pointer h-auto" priority />
+       
+                 <div>
+                   <div className="flex flex-col  md:gap-4 gap-2">
+                   
+                     <h2 className="text-base md:text-xl font-bold text-secondary md:text-primary leading-tigh"> Affiliated to CBSE<br />
+         Affiliation No: 830736</h2>
+                   </div>
+                 </div>
+               </div>
+             </nav>
 
         {/* MAIN CONTENT */}
         <main className="flex-1 flex items-center justify-center px-4 py-8">

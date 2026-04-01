@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { Button } from "../ui/Button";
-import { useSearchParams } from "next/navigation";
+import { useSearchParams, useRouter } from "next/navigation";
 import { COUNTRY_CODES } from "./AdmissionsForm";
 import toast from "react-hot-toast";
 
@@ -25,9 +25,12 @@ export default function EnquiryModal({ isOpen = true, onClose }: EnquiryModalPro
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const searchParams = useSearchParams();
+  const router = useRouter();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+      onClose();
+      router.push("/thank-you");
     setSubmitting(true);
     try {
       await fetch(WEBHOOK_URL, {
@@ -58,8 +61,7 @@ export default function EnquiryModal({ isOpen = true, onClose }: EnquiryModalPro
       }
 
       setSubmitting(false);
-      toast.success("Enquiry submitted. Thank you!");
-      onClose();
+    
       setParentName("");
       setStudentName("");
       setPhone("");

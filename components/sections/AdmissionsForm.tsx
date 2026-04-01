@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { Button } from "../ui/Button";
-import { useSearchParams } from "next/navigation";
+import { useSearchParams, useRouter } from "next/navigation";
 import toast from "react-hot-toast";
 
 const WEBHOOK_URL = "/api/enquiry";
@@ -44,9 +44,11 @@ export default function AdmissionsForm() {
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const searchParams = useSearchParams();
+  const router = useRouter();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    router.push("/thank-you");
     setSubmitting(true);
 
     // Extract UTM and Ad parameters
@@ -86,7 +88,7 @@ export default function AdmissionsForm() {
       }
 
       setSubmitted(true);
-      toast.success("Enquiry submitted. Thank you!");
+      
       setParentName("");
       setStudentName("");
       setPhone("");

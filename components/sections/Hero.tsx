@@ -76,8 +76,8 @@ export default function Hero() {
           <div>
             <div className="flex flex-col  md:gap-4 gap-2">
             
-              <h2 className="text-base md:text-xl font-bold text-secondary md:text-primary leading-tigh"> CBSE Affiliation<br />
-  Number: 830736</h2>
+              <h2 className="text-base md:text-xl font-bold text-secondary md:text-primary leading-tigh"> Affiliated to CBSE<br />
+  Affiliation No: 830736</h2>
             </div>
           </div>
         </div>

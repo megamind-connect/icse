@@ -3,9 +3,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 
-// 1. Import the official GoogleAnalytics component
-import { GoogleAnalytics } from '@next/third-parties/google';
-
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
@@ -21,34 +18,34 @@ export const metadata: Metadata = {
   description:
     "The Cambridge International School Adyar Mangaluru is a top-ranked CBSE school offering academic excellence from Nursery to Grade 10. Founded in 2007 under St. Lawrence Education Trust. Admissions open 2025–26.",
   
- keywords: [
-  // Brand
-  "Cambridge International School Adyar Mangaluru",
-  "Cambridge International School Mangalore",
-  "TCIS Mangalore",
-  "Cambridge School Mangalore",
+  keywords: [
+    // Brand
+    "Cambridge International School Adyar Mangaluru",
+    "Cambridge International School Mangalore",
+    "TCIS Mangalore",
+    "Cambridge School Mangalore",
 
-  // Location-intent
-  "best CBSE school in Mangalore",
-  "top school in Mangaluru",
-  "CBSE school Adyar Mangalore",
-  "CBSE school Kudupu Mangalore",
-  "CBSE school Neermarga Road",
-  "school near Sahyadri College Mangalore",
+    // Location-intent
+    "best CBSE school in Mangalore",
+    "top school in Mangaluru",
+    "CBSE school Adyar Mangalore",
+    "CBSE school Kudupu Mangalore",
+    "CBSE school Neermarga Road",
+    "school near Sahyadri College Mangalore",
 
-  // Admission-intent
-  "Cambridge School admissions 2025",
-  "CBSE school admissions Mangalore 2025-26",
-  "nursery admission Mangalore",
-  "grade 10 CBSE school Mangalore",
+    // Admission-intent
+    "Cambridge School admissions 2025",
+    "CBSE school admissions Mangalore 2025-26",
+    "nursery admission Mangalore",
+    "grade 10 CBSE school Mangalore",
 
-  // Broad
-  "best school in Karnataka",
-  "St Lawrence Education Trust school",
-  "co-curricular activities CBSE school",
-  "ICT school Mangalore",
-  "international school Mangaluru",
-],
+    // Broad
+    "best school in Karnataka",
+    "St Lawrence Education Trust school",
+    "co-curricular activities CBSE school",
+    "ICT school Mangalore",
+    "international school Mangaluru",
+  ],
 
   // ── Authorship & URL ──────────────────────────────────────────────────────
   authors: [{ name: "Cambridge School Mangalore", url: "https://apply.tcismangalore.org" }],
@@ -104,7 +101,6 @@ export const metadata: Metadata = {
 
   // ── Verification ─────────────────────────────────────────────────────────
   verification: {
-    // 2. Added your specific Google Site Verification token here
     google: "OD4AP9ghSime2qaxwnthvya-I3FgSsmXvICK48NEQ_g", 
   },
 
@@ -130,17 +126,33 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={inter.variable}>
-      <body className="font-sans  antialiased">
+      <body className="font-sans antialiased">
         <ModalProvider>
           <GlobalModal />
           {children}
         </ModalProvider>
         <Toaster position="top-center" />
         <Script src="/smoothScroll/smoothScroll.js" />
+        
+        {/* --- Google Analytics Integration --- */}
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=G-4DZB65PQ2R`}
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-4DZB65PQ2R');
+            `,
+          }}
+        />
+        {/* ------------------------------------ */}
       </body>
-      
-      {/* 3. Added the Google Analytics component here */}
-      <GoogleAnalytics gaId="G-4DZB65PQ2R" />
     </html>
   );
 }

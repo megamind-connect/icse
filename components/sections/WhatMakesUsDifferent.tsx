@@ -84,15 +84,13 @@ export default function WhatMakesUsDifferent() {
           {/* Left Side: Heading & Image */}
           <div className="flex flex-col w-full lg:w-[35%]">
             <h2 className="text-3xl hidden md:block md:text-4xl font-bold text-primary max-w-xl leading-tight mb-8 lg:mb-12">
-              What Makes Cambridge
-              <br className="hidden md:block" />
+              What Makes The Cambridge
               International School
-              <br className="hidden md:block" />
               Different
             </h2>
 
             <h2 className="text-3xl md:hidden md:text-4xl font-bold text-primary max-w-xl leading-tight mb-8 lg:mb-12">
-              What Makes Cambridge International School Different
+              What Makes The Cambridge International School Different
             </h2>
 
             {/* Image with Yellow Shape */}
@@ -139,11 +137,23 @@ export default function WhatMakesUsDifferent() {
                       <div className="flex-shrink-0 ml-auto sm:hidden">
                         {isActive ? (
                           <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.75 5.33002L5.75081 0.750017L10.75 5.33002" stroke="#2F2F2F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                            <path
+                              d="M0.75 5.33002L5.75081 0.750017L10.75 5.33002"
+                              stroke="#2F2F2F"
+                              strokeWidth="1.5"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            />
                           </svg>
                         ) : (
                           <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.75 0.75L5.75081 5.33L10.75 0.75" stroke="#2F2F2F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                            <path
+                              d="M0.75 0.75L5.75081 5.33L10.75 0.75"
+                              stroke="#2F2F2F"
+                              strokeWidth="1.5"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            />
                           </svg>
                         )}
                       </div>
@@ -166,7 +176,6 @@ export default function WhatMakesUsDifferent() {
                       )}
                     </AnimatePresence>
                   </div>
-
 
                   {/* Thumbnail Image - Fixed jumping logic */}
                   <AnimatePresence initial={false}>

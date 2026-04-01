@@ -52,6 +52,11 @@ export default function EnquiryModal({ isOpen = true, onClose }: EnquiryModalPro
         }),
       });
 
+      // Track Meta Pixel Lead event
+      if (typeof window !== "undefined" && (window as any).fbq) {
+        (window as any).fbq("track", "Lead");
+      }
+
       setSubmitting(false);
       toast.success("Enquiry submitted. Thank you!");
       onClose();

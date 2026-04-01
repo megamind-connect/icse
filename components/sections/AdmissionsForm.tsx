@@ -79,6 +79,12 @@ export default function AdmissionsForm() {
           ad_id,
         }),
       });
+
+      // Track Meta Pixel Lead event
+      if (typeof window !== "undefined" && (window as any).fbq) {
+        (window as any).fbq("track", "Lead");
+      }
+
       setSubmitted(true);
       toast.success("Enquiry submitted. Thank you!");
       setParentName("");

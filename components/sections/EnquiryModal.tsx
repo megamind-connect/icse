@@ -41,7 +41,7 @@ export default function EnquiryModal({ isOpen = true, onClose }: EnquiryModalPro
           childAge,
           grade,
           location,
-          premise: "campbridge",
+          premise: "admission",
           utm_source: searchParams.get("utm_source") || "",
           utm_medium: searchParams.get("utm_medium") || "",
           utm_campaign: searchParams.get("utm_campaign") || "",

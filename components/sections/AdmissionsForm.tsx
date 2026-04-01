@@ -69,7 +69,7 @@ export default function AdmissionsForm() {
           childAge,
           grade,
           location,
-          premise: "campbridge",
+          premise: "admission",
           utm_source,
           utm_medium,
           utm_campaign,

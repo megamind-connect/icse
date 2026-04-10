@@ -86,6 +86,7 @@ export const metadata: Metadata = {
     images: ["/images/ogImage/ogImage.png"],
   },
 
+  
   // ── Robots ────────────────────────────────────────────────────────────────
   robots: {
     index: true,

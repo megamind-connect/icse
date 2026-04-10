@@ -38,7 +38,7 @@ export default function Hero() {
   return (
     <div className=" bg-white relative overflow-hidden font-sans">
       {/* Background Red Curve SVG - Desktop */}
-      <div className="absolute hidden md:block -top-40 md:-top-90 right-0 z-0 pointer-events-none w-[200px] md:w-[500px] lg:w-[600px] translate-x-[20%] md:translate-x-[30%] -translate-y-10">
+      <div className="absolute hidden md:block -top-40 md:-top-90 right-0 z-0 pointer-events-none w-[200px] md:w-[500px] lg:w-[600px] xl:w-[650px] translate-x-[20%] md:translate-x-[30%] -translate-y-10">
         <svg viewBox="0 0 666 1129" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-auto">
           <path d="M126.853 2.05966C-258.442 643.507 358.43 827.747 662.219 1125.5" stroke="url(#paint0_linear_68_2)" strokeWidth="8" />
           <defs>

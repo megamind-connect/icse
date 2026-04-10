@@ -8,9 +8,9 @@ import "swiper/css";
 import { Autoplay } from "swiper/modules";
 
 const facilities = [
-  "Spacious Green\nCampus",
+  "Experienced\nFaculties",
   "Dedicated\nSports Areas",
-  "Modern Learning\nFacilities",
+  "Premier Campus\nFacilities",
   "Library and Labs",
   "Robotics and\nInnovation Activities",
   "Sports Training with\nExperienced Coaches",
